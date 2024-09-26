@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheezious Restaurant</title>
+    <link rel="stylesheet" href="Cheezious.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="banner">
+            <img src="download (3).jpeg" alt="Cheezious Restaurant Banner" class="active">
+            <img src="download (1).jpeg" alt="Cheezious Restaurant Banner">
+            <img src="download.jpeg" alt="Cheezious Restaurant Banner">
+        </div>
+    </header>
+    <main>
+        <section class="menu-listing">
+            <h1>Our Menu</h1>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="download (1).png" alt="Item 1">
+                    <h2>Cheesy Delight</h2>
+                    <p>A delicious blend of cheese and herbs</p>
+                    <span>RS 1299</span>
+                    <p><a href="#">BUY</a></p>
+                </div>
+                <div class="menu-item">
+                    <img src="download 10 (1).png" alt="Item 2">
+                    <h2>Cheezious Burger</h2>
+                    <p>A juicy burger topped with melted cheese</p>
+                    <span>RS 1599</span>
+                    <p><a href="#">BUY</a></p>
+                </div>
+                <div class="menu-item">
+                    <img src="download (2).png" alt="Item 3">
+                    <h2>Cheese Fries</h2>
+                    <p>Crispy fries smothered in melted cheese</p>
+                    <span>RS 899</span>
+                    <p><a href="#">BUY</a></p>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Cheezious Restaurant</p>
+    </footer>
+
+    <script>
+        let banners = document.querySelectorAll('.banner img');
+        let currentBanner = 0;
+
+        function changeBanner() {
+            banners[currentBanner].classList.remove('active');
+            currentBanner = (currentBanner + 1) % banners.length;
+            banners[currentBanner].classList.add('active');
+        }
+
+        setInterval(changeBanner, 5000);
+    </script>
+</body>
+</html>

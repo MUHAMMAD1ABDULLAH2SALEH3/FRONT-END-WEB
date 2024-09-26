@@ -1,0 +1,24 @@
+*{
+    font: 100;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    background-color: rgb(240, 252, 0);
+}
+h1{
+    color: darkblue;
+   font-size: xx-large;
+   text-align: center;
+    text-transform:initial ;
+}
+td{
+    padding: 20%;
+    -ms-text-autospace:inherit;
+    text-decoration: none;
+}
+td.a{
+text-decoration: none;
+background-color: aqua;
+}
+NAV{
+    text-decoration: none;
+}
