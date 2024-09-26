@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: antiquewhite;
+    
+}
+.aboutus{
+    text-align: center;
+
+}
+.history{
+    font-family: 'Courier New', Courier, monospace;
+    /* color: white; */
+  
+}
